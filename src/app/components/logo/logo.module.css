@@ -1,0 +1,61 @@
+.logo {
+  display: block;
+}
+
+.rim {
+  width: fit-content;
+  /* background: linear-gradient(
+    130deg,
+    rgba(255, 29, 210, 1) 0%,
+    rgba(0, 230, 255, 1) 100%
+  ); */
+  padding: 4px;
+  border-radius: 16px;
+
+  background: linear-gradient(203deg, #00e6ff, #ff1dd2, #84ff70);
+  background-size: 600% 600%;
+
+  -webkit-animation: GradientLogoSwitch 2s ease infinite;
+  -moz-animation: GradientLogoSwitch 2s ease infinite;
+  animation: GradientLogoSwitch 2s ease infinite;
+}
+
+.rimInner {
+  padding: 8px;
+  background: var(--background);
+  border-radius: 12px;
+}
+
+@-webkit-keyframes GradientLogoSwitch {
+  0% {
+    background-position: 7% 0%;
+  }
+  50% {
+    background-position: 94% 100%;
+  }
+  100% {
+    background-position: 7% 0%;
+  }
+}
+@-moz-keyframes GradientLogoSwitch {
+  0% {
+    background-position: 7% 0%;
+  }
+  50% {
+    background-position: 94% 100%;
+  }
+  100% {
+    background-position: 7% 0%;
+  }
+}
+@keyframes GradientLogoSwitch {
+  0% {
+    background-position: 7% 0%;
+  }
+  50% {
+    background-position: 94% 100%;
+  }
+  100% {
+    background-position: 7% 0%;
+  }
+}
